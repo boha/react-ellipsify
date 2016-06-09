@@ -1,10 +1,10 @@
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
-		module.exports = factory(require("react/addons"));
+		module.exports = factory(require("react"));
 	else if(typeof define === 'function' && define.amd)
 		define(["React"], factory);
 	else if(typeof exports === 'object')
-		exports["Ellipsify"] = factory(require("react/addons"));
+		exports["Ellipsify"] = factory(require("react"));
 	else
 		root["Ellipsify"] = factory(root["React"]);
 })(this, function(__WEBPACK_EXTERNAL_MODULE_1__) {
@@ -111,7 +111,7 @@ return /******/ (function(modules) { // webpackBootstrap
 	        }
 
 	        var content = this.state.content;
-	        var more = React.createElement("div", {key: "more", className: this.props.moreClass, onClick: this.show}, 
+	        var more = React.createElement("div", {key: "more", className: this.props.moreClass, onClick: this.show},
 	            this.props.more ? this.props.more : '…'
 	        );
 
